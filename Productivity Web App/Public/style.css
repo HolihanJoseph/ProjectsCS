@@ -1,0 +1,103 @@
+.show {
+    display: block;
+
+  }
+  .hide {
+    display: none;
+  }
+  body{
+    color: #F2E3D5;
+    background-color: #026773;
+    width: 450px; /* Set a fixed width for the entire website */
+    margin: 0 auto;
+    font-family: 'Hedvig Letters Serif', serif;
+  }
+  .checklist input[type="checkbox"] {
+    /* Hide the default checkbox */
+    display: none;
+  }
+  
+  .checklist label {
+    /* Style the label to appear as a custom checkbox */
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px; /* Space for the checkbox */
+  }
+  
+  .checklist label::before {
+    /* Create the custom checkbox */
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    border: 1px solid #ccc; /* Checkbox border */
+    background-color: #fff; /* Checkbox background */
+  }
+  
+  /* Checkbox checked style */
+  .checklist input[type="checkbox"]:checked + label::before {
+    background-color: #5cb85c; /* Change background color when checked */
+    border-color: #4cae4c; /* Change border color when checked */
+  }
+  
+  /* Hide the default checkbox but show the custom one when checked */
+  .checklist input[type="checkbox"]:checked + label::before {
+    content: '\2713'; /* Unicode checkmark symbol */
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+  }
+  .section{
+    background-color: #024959; /* Sets the background color to gray */
+    border-radius: 10px; /* Rounds the edges; adjust the value to change the roundness */
+    padding: 4px; 
+    margin: 5px;
+    display: grid;
+  }
+  .sub-section{
+    background-color: #012E40; /* Sets the background color to gray */
+    border-radius: 10px; /* Rounds the edges; adjust the value to change the roundness */
+    padding: 4px; 
+    margin: 5px;
+  }
+  .checklist {
+    position: relative; /* To make it a positioned container */
+  }
+  .removeButton {
+    position: absolute; /* Position the button */
+    right: 10px; /* Adjust the distance from the right */
+    top: 0; /* Align with the top of the checklist item */
+  }
+  .header-container {
+   /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+.new-button{
+  position: relative;
+  right:10px;
+}
+.stats-display{
+  display: grid;
+}
+
+
+h1, button {
+  margin: 100; /* Remove default margins */
+  /* You can add additional styles for h1 and button as needed */
+}
+
+
+/* Color Theme Swatches in Hex */
+.Deep-Teal-Sea-1-hex { color: #012E40; }
+.Deep-Teal-Sea-2-hex { color: #024959; }
+.Deep-Teal-Sea-3-hex { color: #026773; }
+.Deep-Teal-Sea-4-hex { color: #3CA6A6; }
+.Deep-Teal-Sea-5-hex { color: #F2E3D5; }
+
+

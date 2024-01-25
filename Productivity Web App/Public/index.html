@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kaizen</title>
+  <script type="module" src="main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-container">
+    <h1>KAIZEN</h1>
+    <button class = "toggle" id="toggleButton"></button>
+  </div>
+  <div id="myDiv" class="hide">
+    <!-- Content for View 1 -->
+    
+  </div>
+  <div id="myDiv2" class="show">
+    <!-- Content for View 2 -->
+    <ul id="checklist">
+      <!-- Items will be loaded here -->
+    </ul>
+    <div >
+      <input type="text" id="newTaskInput" placeholder="Enter new item">
+      <button class="new-button" id="addButton">+</button>
+    </div>
+  </div>
+</body>
+</html>
