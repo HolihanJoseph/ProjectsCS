@@ -11,3 +11,6 @@ Thread Synchronization - Utilizing semaphores to manage threads in C through a s
 
 Productivty Web App - Checklist and habit tracker made in js, HTML, and CSS to create an intuitive and effective online interface. 
     Developed a promise-based HTTP client utilizing MongoDB and Axios API to create a web application.
+
+CPU Scheduler - Implemented algorithms to simulate four different scheduling policies given a workload. Applied understanding of First-In, First-Out(FIFO), Shortest Job First(SJF), Shortest Time to Completion First (STCF), and Round Robin (RR) CPU scheduling policies 
+
